@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="filter">
+            <div class="item">
+                <label for="">Category</label>
+                <select name="category">
+                    <option value="">---</option>
+                    <option value="T-shirt">T-shirt</option>
+                    <option value="Shirt">Shirt</option>
+                    <option value="Polo">Polo</option>
+                </select>
+            </div>
+            <div class="item">
+                <label for="">Color</label>
+                <select name="color">
+                    <option value="">---</option>
+                    <option value="white">white</option>
+                    <option value="black">black</option>
+                    <option value="grey">grey</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                </select>
+            </div>
+            <div class="item">
+                <label for="">Name</label>
+                <input type="text" name="name">
+            </div>
+            <div class="item">
+                <label for="">Min Price</label>
+                <input type="number" name="minPrice">
+            </div>
+            <div class="item">
+                <label for="">Max Price</label>
+                <input type="number" name="maxPrice">
+            </div>
+            <div class="item submit">
+                <button>Search</button>
+            </div>
+        </form>
+        <div class="countResults">
+            Found <b id="count">5</b> results
+        </div>
+        <div id="list">
+            
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
